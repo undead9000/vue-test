@@ -1,0 +1,108 @@
+
+header h1{
+    padding: 10px 20px;
+}
+
+body {
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+}
+main {
+  margin: 40px 0 0 0;
+}
+table td {
+    position: relative;
+}
+table td:first-child {
+    cursor: pointer;
+}
+.sortable {
+    cursor: pointer;
+    font-size: 0;
+}
+.sortable span {
+    font-size: 14px;
+}
+.sortable .material-icons {
+    font-size: 16px;
+    top: 3px;
+    position: relative;
+    margin: 0 0 0 5px;
+}
+.text-right {
+    text-align: right;
+}
+.tooltip-wrapper {
+    position:relative; 
+}
+.tooltip-message{
+    /*display: none;*/
+    background-color:#5c9bb7;
+
+    background-image:-webkit-linear-gradient(top, #5c9bb7, #5392ad);
+    background-image:-moz-linear-gradient(top, #5c9bb7, #5392ad);
+    background-image:linear-gradient(top, #5c9bb7, #5392ad);
+
+    box-shadow: 0 1px 1px #ccc;
+    border-radius: 3px;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+    top: -35px;
+    height: 27px;
+}
+
+.tooltip-message:after{
+    content:'';
+    position:absolute;
+    border:6px solid #5190ac;
+    border-color:#5190ac transparent transparent;
+    width:0;
+    height:0;
+    bottom:-12px;
+    left:50%;
+    margin-left:-6px;
+}
+
+.tooltip-message input{
+    width: 100%;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 16px;
+    font-family: inherit;
+    color: #000;
+    font-weight: bold;
+    outline: none;
+    background: #fff;
+    height: 100%;
+    border: 1px solid #5c9bb7;
+}
+
+p{
+    font-size:22px;
+    font-weight:bold;
+    color:#6d8088;
+    height: 30px;
+    cursor:default;
+}
+
+p b{
+    color:#ffffff;
+    display:inline-block;
+    padding:5px 10px;
+    background-color:#c4d7e0;
+    border-radius:2px;
+    text-transform:uppercase;
+    font-size:18px;
+}
+
+p:before{
+    content:'✎';
+    display:inline-block;
+    margin-right:5px;
+    font-weight:normal;
+    vertical-align: text-bottom;
+}
